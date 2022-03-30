@@ -1,0 +1,185 @@
+/* Подключение шрифтов */
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold'), local('Proxima-Nova-Semibold'),
+        url('/fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Semibold.woff') format('woff'),
+        url('/fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('Proxima-Nova-Bold'),
+        url('/fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('/fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+   }
+   
+   *,
+   *:before,
+   *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+   
+   :focus,
+   :active {
+    outline: none;
+   }
+   
+   a:focus, a:active {
+    outline: none;
+   }
+   
+   nav, footer, header, aside {
+    display: block;
+   }
+   
+   html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+   }
+   
+   input, button, textarea {
+    font-family: inherit;
+   }
+   
+   input::-ms-clear {
+    display: none;
+   }
+   
+   button {
+    cursor: pointer;
+   }
+   
+   button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+   }
+   
+   a, a:visited {
+    text-decoration: none;
+   }
+   
+   a:hover {
+    text-decoration: none;
+   }
+   
+   ul li {
+    list-style: none;
+   }
+   
+   img {
+    vertical-align: top;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+   }
+   
+   /*--------------------*/
+
+   body {
+    font-family: Proxima-Nova-Regular;
+    font-size: 24px;
+    color: black;
+   }
+
+[class*="__container"] {
+    max-width: 1440px; /* ширина макера + по 15px отступы безопасности */
+    margin: 0px auto;
+    padding: 0px 15px; 
+    /* Отступы безопасности по 15px слева и справа.
+    Увеличиваем max ширину на 15+15 = 30 px */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
