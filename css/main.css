@@ -112,7 +112,7 @@
    body {
     font-family: Proxima-Nova-Regular;
     font-size: 24px;
-    color: black;
+    color: #000;
    }
 
 [class*="__container"] {
@@ -123,63 +123,39 @@
     Увеличиваем max ширину на 15+15 = 30 px */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Arimo');
-.top-menu {
-  position: relative;
-  background: rgba(34,34,34,.2);
+.heder-menu {
+  max-width: 998px;
 }
-.menu-main {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menu-main:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.left-item {float: left;}
-.right-item {float: right;}
-.navbar-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-.menu-main a {
-  text-decoration: none;
-  display: block;
-  line-height: 80px;
-  padding: 0 20px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-family: 'Arimo', sans-serif;
-  font-weight: bold;
-  color: white;
-  transition: .3s linear;
-}
-.menu-main a:hover {background: rgba(0,0,0,.3);}
-@media (max-width: 830px) {
-.menu-main {
-  padding-top: 90px;
-  text-align: center;
-}
-.navbar-logo {
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  transform: translateX(-50%);
-}
-.menu-main li {
-  float: none;
+
+.header-items li{
   display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: 94px;
 }
-.menu-main a {
-  line-height: normal;
-  padding: 20px 15px;
-  font-size: 16px;
+
+.header-items li:nth-child(4),
+.header-items li:nth-child(5),
+.header-items li:nth-child(6) {
+  float: right;
+  margin: 0;
+  margin-left: 79px;  
 }
+
+.header-items li a {
+  display: block;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 40px 0px;
 }
-@media (max-width: 630px) {
-.menu-main li {display: block;}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
 }
+
