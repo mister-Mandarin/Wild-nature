@@ -131,6 +131,7 @@ body {
   font-family: 'Proxima-Nova-Regular';
   font-size: 24px;
   color: #000;
+  background-color: #fff;
 }
 
 [class*="__container"] {
@@ -257,3 +258,72 @@ body {
 
 /*============== Header end ==============*/
 
+.main-learn {
+  padding: 95px 0px 75px 0px;
+}
+
+.main-learn__container {
+  display: flex;
+}
+
+.main-learn_content {
+  flex: 0 1 55%;
+  padding: 100px 0px 0px 145px;
+}
+
+.main-learn_image {
+  flex: 0 1 45%;
+  align-items: center;
+}
+
+.main-learn_image img {
+  width: 100%;
+}
+
+.text-block {
+  max-width: 646px;
+}
+
+.text-block_title {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #2C6F2F;
+  text-transform: uppercase;
+}
+
+.text-block_title:not(:last-child) {
+  margin: 0px 0px 45px 0px;
+}
+
+.text-block_text {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.text-block_text:not(:last-child) {
+  margin: 0px 0px 70px 0px;
+}
+
+.text-block_button {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.button {
+  background: #B7D271;
+  border-radius: 15px;
+  padding: 25px 115px;
+
+}
