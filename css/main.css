@@ -259,11 +259,17 @@ body {
 /*============== Header end ==============*/
 
 .main-learn {
+  position: relative;
   padding: 95px 0px 75px 0px;
 }
 
 .main-learn__container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-learn_content {
@@ -274,6 +280,7 @@ body {
 .main-learn_image {
   flex: 0 1 45%;
   align-items: center;
+  position: relative;
 }
 
 .main-learn_image img {
@@ -308,7 +315,7 @@ body {
 }
 
 .text-block_text:not(:last-child) {
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 55px 0px;
 }
 
 .text-block_button {
@@ -324,6 +331,132 @@ body {
 .button {
   background: #B7D271;
   border-radius: 15px;
-  padding: 25px 115px;
+  padding: 15px 120px;
+
+}
+
+.main-learn_branch-1 {
+  position: absolute;
+  top: 525px;
+  left: -79px;
+  z-index: -1;
+}
+
+.main-learn_branch-1 img {
+  width: 495px;
+  height: 331px;
+}
+
+.main-learn_branch-2 {
+  position: absolute;
+  top: 380px;
+  right: -126px;
+  transform: rotate(-169deg);
+  z-index: 2;
+}
+
+.main-learn_branch-2 img {
+  width: 495px;
+  height: 331px;
+  }
+
+.main-learn_branch-3 {
+  position: absolute;
+  top: 185px;
+  left: -80px;
+  transform: scale(1, -1) rotate(114deg);
+  z-index: -2;
+}
+
+.main-learn_branch-3 img {
+  width: 465px;
+  height: 305px;
+}
+
+.main-learn_cone-1 {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+}
+
+.main-learn_cone-2 {
+  position: absolute;
+  top: 520px;
+  left: 585px;
+  transform: rotate(95deg);
+}
+
+.main-learn_cone-3 {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
+
+@media (max-width: 1024px) {
+  .main-learn_content {
+    flex: 0 1 55%;
+    padding: 100px 0px 0px 30px;
+  }
+
+  .main-learn_branch-1 {
+    position: absolute;
+    top: 510px;
+    left: -79px;
+    z-index: -1;
+  }
+  
+  .main-learn_branch-1 img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .main-learn_branch-2 img{
+    width: 85%;
+    height: 85%;
+  }
+
+  .main-learn_branch-3 {
+    display: none;
+  }
+
+  .main-learn_image {
+    flex: 0 1 45%;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main-learn_branch-2 {
+    position: absolute;
+    top: 380px;
+    right: -126px;
+    transform: rotate(-169deg);
+    z-index: 2;
+    display: none;
+  }
+
+  .main-learn_branch-1 {
+    position: absolute;
+    top: 470px;
+    left: -20px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .main-learn_cone-2 {
+    position: absolute;
+    top: 520px;
+    left: 585px;
+    transform: rotate(95deg);
+    display: none;
+  }
+
+  .main-learn_content {
+    flex: 0 1 100%;
+    padding: 70px 0px 0px 0px;
+  }
 
 }
