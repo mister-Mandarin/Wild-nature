@@ -258,6 +258,7 @@ body {
 
 /*============== Header end ==============*/
 
+/*============== Main screen start ==============*/
 .main-learn {
   position: relative;
   padding: 95px 0px 75px 0px;
@@ -332,7 +333,6 @@ body {
   background: #B7D271;
   border-radius: 15px;
   padding: 15px 120px;
-
 }
 
 .main-learn_branch-1 {
@@ -459,4 +459,95 @@ body {
     padding: 70px 0px 0px 0px;
   }
 
+  .main-learn {
+    position: relative;
+    padding: 40px 0px 75px 0px;
+  }
+
+  .main-learn_cone-1 {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+  }
+
+  .main-learn_cone-3 {
+    position: absolute;
+    top: -90px;
+    right: 0px;
+  }
+
+  .main-learn_image {
+    padding: 60px 0px 0px 0px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .main-learn__container {
+    display: block;
+  }
+
 }
+
+@media (max-width: 320px) {
+  .main-learn_cone-3 {
+    display: none;
+  }
+
+  .text-block_title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 40px;
+    color: #2C6F2F;
+    text-transform: uppercase;
+  }
+  
+  .text-block_title:not(:last-child) {
+    margin: 0px 0px 35px 0px;
+  }
+
+  .text-block_text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+  .text-block_button {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .button {
+    background: #B7D271;
+    border-radius: 15px;
+    padding: 10px 95px;
+  }
+
+  .main-learn_image {
+    padding: 60px 0px 0px 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-learn_branch-1 {
+    position: absolute;
+    top: 420px;
+    left: -20px;
+    z-index: -1;
+    opacity: 0.6;
+  }
+
+}
+
+/*============== Main screen end ==============*/
+
+/*============== Second screen start ==============*/
