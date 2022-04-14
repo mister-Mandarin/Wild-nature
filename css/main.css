@@ -67,6 +67,8 @@ body {
   height: 100%;
   line-height: 1;
   font-size: 14px;
+  overflow-x: hidden;
+  /* убираем горизонтальный скролл */
 }
 
 .wrapper {
@@ -143,6 +145,51 @@ body {
     Увеличиваем max ширину на 15+15 = 30 px */
 }
 
+.simple-text {
+  font-family: 'Proxima Nova';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  columns: #000000;
+}
+
+@media (max-width: 320px) {
+  .simple-text {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    columns: #000000;
+  }
+}
+
+.button {
+  background: #B7D271;
+  border-radius: 15px;
+  height: 72px;
+  min-width: 350px;
+}
+
+.text-big_button {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (max-width: 370px) {
+  .button {
+    min-width: 100%;
+  }
+}
+
 /*============== Header start ==============*/
 .header-menu {
   max-width: 1102px;
@@ -150,11 +197,13 @@ body {
   margin: 0px auto;
 }
 
-.menu-main:after { 
+.menu-main:after {
   content: "";
   display: table;
   clear: both;
-} /*хуй знает почему и как работает это*/
+}
+
+/*хуй знает почему и как работает это*/
 
 .menu-item:nth-child(1),
 .menu-item:nth-child(2) {
@@ -319,22 +368,6 @@ body {
   margin: 0px 0px 55px 0px;
 }
 
-.text-block_button {
-  font-family: 'Proxima Nova';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.button {
-  background: #B7D271;
-  border-radius: 15px;
-  padding: 15px 120px;
-}
-
 .main-learn_branch-1 {
   position: absolute;
   top: 525px;
@@ -358,7 +391,7 @@ body {
 .main-learn_branch-2 img {
   width: 495px;
   height: 331px;
-  }
+}
 
 .main-learn_branch-3 {
   position: absolute;
@@ -404,13 +437,13 @@ body {
     left: -79px;
     z-index: -1;
   }
-  
+
   .main-learn_branch-1 img {
     width: 85%;
     height: 85%;
   }
 
-  .main-learn_branch-2 img{
+  .main-learn_branch-2 img {
     width: 85%;
     height: 85%;
   }
@@ -502,7 +535,7 @@ body {
     color: #2C6F2F;
     text-transform: uppercase;
   }
-  
+
   .text-block_title:not(:last-child) {
     margin: 0px 0px 35px 0px;
   }
@@ -514,22 +547,6 @@ body {
     font-size: 32px;
     line-height: 40px;
     color: #000000;
-  }
-
-  .text-block_button {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-    color: #FFFFFF;
-  }
-  
-  .button {
-    background: #B7D271;
-    border-radius: 15px;
-    padding: 10px 95px;
   }
 
   .main-learn_image {
@@ -551,3 +568,231 @@ body {
 /*============== Main screen end ==============*/
 
 /*============== Second screen start ==============*/
+
+.map {
+  position: relative;
+}
+
+.map_content {
+  display: flex;
+  padding: 120px 0px 100px 0px;
+  align-items: center;
+}
+
+.map_image {
+  margin-right: 40px;
+  flex: 0 1 62%;
+}
+
+.map_image img {
+  width: 100%;
+}
+
+.map-text {
+  flex: 0 1 38%;
+  max-width: 385px;
+}
+
+.map-branch {
+  position: absolute;
+  left: -55px;
+  bottom: -20px;
+  transform: rotate(-59deg);
+}
+
+.map-branch img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+  .map-branch {
+    position: absolute;
+    left: -80px;
+    bottom: 90px;
+    transform: rotate(-59deg);
+  }
+
+  .map-branch img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .map_content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+  }
+
+  .map-text {
+    /* !!! Очень важно!! Иначе не работало!!! */
+    display: flex;
+    max-width: 100%;
+  }
+
+  .map_image {
+    display: flex;
+    padding: 50px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .map-branch {
+    position: absolute;
+    left: -80px;
+    bottom: 60px;
+    transform: rotate(-59deg);
+  }
+
+  .map-branch img {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 660px) {
+
+  .map-branch {
+    position: absolute;
+    left: -100px;
+    bottom: 290px;
+    transform: rotate(-59deg);
+    z-index: -1;
+  }
+
+  .map-branch img {
+    width: 80%;
+    opacity: 0.3;
+  }
+
+}
+
+/*============== Second screen end ==============*/
+
+/*============== Cards screen start ==============*/
+
+.main-cards__container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-cards_content {
+  max-width: 1100px;
+  padding: 65px 0px 0px 0px;
+}
+
+.main-cards_text {
+  display: flex;
+  text-align: center;
+  padding: 0px 0px 150px 0px;
+}
+
+.main-cards_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-card_item {
+  width: 341px;
+  height: 341px;
+  border-radius: 69px;
+  background-color: #B7D271;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 37px 0px;
+  position: relative;
+}
+
+.main-card_item-cat {
+  position: absolute;
+  top: -130px;
+}
+
+.main-cards_content button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-card_img_bt {
+  position: relative;
+}
+
+.main-card_img_bt img {
+  position: absolute;
+  right: 130px;
+  top: -60px;
+}
+
+.main-card_item_cone {
+  
+}
+
+@media (max-width: 1024px) {
+
+  .main-card_item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .main-card_img_bt img {
+    right: 80px;
+    top: -60px;
+  }
+
+  .main-card_item-cat img {
+    width: 100%;
+  }
+
+  .main-card_item-cat {
+    top: -105px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .main-cards_items {
+    justify-content: space-around;
+  }
+
+  .main-card_img_bt img {
+    width: 30%;
+    right: -20px;
+    top: -50px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .main-card_item {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .main-cards_text {
+    text-align: left;
+    padding: 0px 0px 70px 0px;
+  }
+
+  .main-card_img_bt img {
+    width: 80%;
+    left: 0px;
+    top: 90px;
+  }
+
+  .main-card_item-cat {
+    top: -85px;
+  }
+  
+}
