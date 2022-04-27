@@ -176,6 +176,13 @@ body {
   min-width: 350px;
 }
 
+.small-button {
+  background: #B7D271;
+  border-radius: 15px;
+  height: 72px;
+  min-width: 171px;
+}
+
 .text-big_button {
   font-family: 'Proxima Nova';
   font-style: normal;
@@ -190,6 +197,10 @@ body {
   .button {
     min-width: 100%;
   }
+
+  .small-button {
+    min-width: 100%;
+  }
 }
 
 .subtext {
@@ -199,6 +210,13 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #C4C4C4;
+}
+
+@media (max-width: 768px) {
+
+  .subtext {
+    color: #000000;
+  }
 }
 
 /* ============== БЭМ элементы end ==================== */
@@ -364,7 +382,7 @@ body {
   text-transform: uppercase;
 }
 
-.text-block_title:not(:last-child) {
+.main-learn-title {
   margin: 0px 0px 45px 0px;
 }
 
@@ -470,6 +488,11 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     position: relative;
+  }
+
+  .main-learn-title {
+    font-size: 40px;
+    line-height: 50px;
   }
 
 }
@@ -753,7 +776,7 @@ body {
 .main-card_item_cone-1 {
   position: absolute;
   left: 150px;
-  bottom: -70px;  
+  bottom: -70px;
   z-index: 3;
 }
 
@@ -784,7 +807,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  
+
   .main-cards_items {
     justify-content: space-around;
   }
@@ -826,7 +849,7 @@ body {
   .main-card_item_cone {
     top: -20px;
     right: -70px;
-   }
+  }
 
   .main-card_item_cone img {
     width: 70%;
@@ -836,11 +859,11 @@ body {
     left: 0px;
     bottom: 70px;
   }
-  
+
   .main-card_item_cone-1 img {
     width: 70%;
   }
-  
+
 }
 
 /*============== Cards screen end ==============*/
@@ -848,31 +871,533 @@ body {
 
 /*============== Losos screen start ==============*/
 
+.main-fish {
+  position: relative;
+}
+
 .main-fish__container {
   display: flex;
   justify-content: center;
+}
+
+.main-fish_block {
+  display: flex;
+  flex-wrap: wrap;
   padding: 310px 0px 0px 0px;
 }
 
 .main-fish_image {
-  display: flex;
   flex: 0 1 53%;
-  justify-content: flex-end;
 }
 
-.main-fish_image img{
- width: 640px;
+.main-fish_image img {
+  width: 100%;
 }
 
 .main-fish_content {
   flex: 0 1 47%;
-  max-width: 546px;
+  max-width: 560px;
 }
 
 .main-fish-numbers {
-  
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #D0D0D0;
+  margin: 0px 0px 20px 0px;
+}
+
+.main-fish-numbers-border td {
+  padding: 0px 10px;
+}
+
+.main-fish-numbers-border td:not(:last-child) {
+  border-right: 2px solid #C4C4C4;
 }
 
 .main-fish_title {
-  
+  margin: 0px 0px 20px 0px;
+}
+
+.main-fish_text {
+  margin: 0px 0px 16px 0px;
+}
+
+.main-fish_subtext {
+  margin: 0px 0px 45px 0px;
+}
+
+.block_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+  justify-content: space-between;
+  gap: 14px 0px;
+}
+
+.main-fish-branch-left {
+  position: absolute;
+  left: -46px;
+  top: 451px;
+  z-index: 3;
+}
+
+.main-fish-branch-left img {
+  width: 358px;
+}
+
+.main-fish-branch-right {
+  position: absolute;
+  right: -160px;
+  top: 140px;
+  z-index: 3;
+  transform: scale(1, -1) rotate(-154deg);
+}
+
+.main-fish-branch-right img {
+  width: 380px;
+}
+
+@media (max-width: 1024px) {
+
+  .main-fish-branch-left img {
+    width: 70%;
+  }
+
+  .main-fish-branch-right {
+    z-index: -6;
+  }
+
+  .main-fish-branch-right img {
+    width: 70%;
+    opacity: 0.5;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main-fish_block {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 180px 0px 0px 0px;
+  }
+
+  .main-fish-branch-left {
+    left: -46px;
+    top: 340px;
+  }
+
+  .main-fish-branch-left img {
+    width: 70%;
+    opacity: 0.3;
+  }
+
+  .main-fish-branch-right {
+    top: 190px;
+    z-index: 3;
+  }
+
+  .main-fish-branch-right img {
+    width: 70%;
+    opacity: 0.3;
+  }
+
+  .main-fish_image {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px 60px 0px;
+  }
+
+  .main-fish_image img {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .main-fish_title {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  .main-fish_block {
+    width: 100%;
+    padding: 360px 0px 0px 0px;
+  }
+
+  .main-fish-numbers {
+    display: flex;
+    font-size: 24px;
+    line-height: 37px;
+    justify-content: center;
+  }
+
+  .main-fish-branch-left {
+    top: 650px;
+  }
+
+  .block_buttons {
+    width: 100%;
+  }
+
+  .main-fish_subtext {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .main-fish_image {
+    padding: 80px 0px 40px 0px;
+  }
+
+  .main-fish-branch-left img {
+    width: 80%;
+    opacity: 0.3;
+  }
+
+  .main-fish-branch-right {
+    display: none;
+  }
+
+  .main-fish_image img {
+    width: 100%;
+  }
+
+}
+
+/*============== Losos screen end ==============*/
+
+/*============== Deer screen start ==============*/
+
+.main-deer {
+  position: relative;
+}
+
+.main-deer__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-deer_block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 172px 0px 0px 0px;
+}
+
+.main-deer-branch-right {
+  position: absolute;
+  right: -140px;
+  bottom: 10px;
+  z-index: 3;
+  transform: scale(1, -1) rotate(-154deg);
+}
+
+.main-deer-branch-right img {
+  width: 100%
+}
+
+.main-deer_content {
+  flex: 0 1 47%;
+  max-width: 546px;
+}
+
+.main-deer_image {
+  flex: 0 1 53%;
+}
+
+.main-deer_image img {
+  width: 108%;
+}
+
+.deer_image {
+  position: absolute;
+  bottom: -65px;
+  right: 272px;
+  z-index: 5;
+}
+
+.deer_image img {
+  width: 100%;
+}
+
+.main-deer_content>h1,
+.main-deer_content>div {
+  text-align: right;
+}
+
+.main-deer_content table {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-deer_table td {
+  padding: 0px 40px;
+}
+
+.main-deer_buttons {
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+
+  .main-deer-branch-right {
+    z-index: -6;
+  }
+
+  .main-deer-branch-right img {
+    width: 70%;
+  }
+
+  .deer_image {
+    right: 130px;
+  }
+
+  .deer_image img {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main-deer_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 70px 0px 0px 0px;
+  }
+
+  .main-deer_content>h1,
+  .main-deer_content>div {
+    text-align: left;
+  }
+
+  .main-deer_content table {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main-deer_buttons {
+    margin-left: 0px;
+  }
+
+  .main-deer_image {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 60px 0px;
+  }
+
+  .main-deer_image img {
+    width: 80%;
+  }
+
+  .deer_image {
+    bottom: 0px;
+  }
+
+  .deer_image img {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .main-deer-branch-right {
+    bottom: 0px;
+  }
+
+  .main-deer-branch-right img {
+    width: 70%;
+    opacity: 0.5;
+  }
+
+  .main-deer_image {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .main-deer_image img {
+    width: 100%;
+  }
+
+  .deer_image {
+    bottom: 0px;
+  }
+
+  .deer_image img {
+    width: 110%;
+  }
+
+}
+
+/*============== Deer screen end ==============*/
+
+/*============== Bull screen start ==============*/
+.wrap__branch {
+  width: 496px;
+  height: 331px;
+}
+
+.main-bull-branch-left {
+  position: absolute;
+  background: url(../img/branch.png) no-repeat;
+  transform: rotate(-30.83deg);
+  bottom: 55px;
+  left: -114px;
+  z-index: 5;
+}
+
+.main-bull-branch-right {
+  position: absolute;
+  background: url(../img/branch.png) no-repeat;
+  background-size: 489px 323px;
+  transform: matrix(-0.74, -0.67, -0.67, 0.74, 0, 0);
+  bottom: -160px;
+  right: -155px;
+}
+
+.main-bull {
+  position: absolute;
+  left: 109px;
+  bottom: -92px;
+  z-index: 10;
+}
+
+.main-fish-bull_block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 230px 0px 0px 0px;
+}
+
+.main-bull-branch-right {
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+
+  .main-bull-branch-left {
+    background-size: 80%;
+  }
+
+  .main-bull-branch-right {
+    background-size: 80%;
+    z-index: -2;
+    opacity: 0.5;
+  }
+
+  .main-bull {
+    left: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main-bull-branch-left {
+    background-size: 80%;
+  }
+
+  .main-bull-branch-right {
+    bottom: 525px;
+  }
+
+  .main-bull {
+    left: 0px;
+  }
+
+  .main-bull img {
+    width: 90%;
+  }
+
+  .main-fish-bull_block {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 100px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .main-bull-branch-left {
+    z-index: -3;
+    opacity: 0.5;
+    background-size: 70%;
+  }
+
+  .main-bull {
+    bottom: 0px;
+  }
+
+  .main-bull {
+    width: 70%;
+  }
+
+  .main-fish-bull_block {
+    width: 100%;
+    padding: 70px 0px 0px 0px;
+  }
+}
+
+/*============== Bull screen end ==============*/
+
+/*============== Trust screen start ==============*/
+
+.trust__container h1 {
+  text-align: center;
+}
+
+.main-trust-title {
+  padding: 215px 0px 110px 0px;
+}
+
+.trust-box {
+  display: flex;
+  justify-content: center;
+}
+
+.trust-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-trust {
+  width: 1022px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-next {
+  transform: scale(-1, 1);
+}
+
+.button-slider {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .wrapper-trust {
+    width: 700px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .main-trust-title {
+    padding: 80px 0px 10px 0px;
+  }
+
 }
