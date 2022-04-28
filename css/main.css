@@ -1401,3 +1401,253 @@ body {
   }
 
 }
+
+/*============== Trust screen end ==============*/
+
+/*============== Delivery screen start ==============*/
+
+.main-delivery {
+  padding: 193px 0px 0px 0px;
+}
+
+.delivery__container {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.delivery-content {
+  width: 490px;
+}
+
+.delivery-content h1 {
+  margin-bottom: 45px;
+}
+
+.delivery-image img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .delivery__container {
+    flex-direction: column;
+  }
+
+  .delivery-content {
+    width: 100%;
+  }
+
+  .delivery-image {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .main-delivery {
+    padding: 80px 0px 0px 0px;
+  }
+
+}
+
+/*============== Delivery screen end ==============*/
+
+/*============== Conntacts screen start ==============*/
+
+.main-contacts {
+  padding: 130px 0px 0px 0px;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-map {
+  width: 520px;
+  height: 520px;
+  position: relative;
+}
+
+/* Благодаря тому что внизу и вверху получаем адаптивную карту */
+
+.main-contacts {
+  position: relative;
+}
+
+.contacts-map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-content {
+  margin-left: 26px;
+
+}
+
+.contacts-content>*:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.contacts {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+}
+
+.contacts li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.contacts li:nth-child(1):before {
+  flex: 0 0 55px;
+  /* Даем жесткую ширину и запрещаем зименяться */
+  height: 55px;
+  content: "";
+  background: url(/img/tel.svg) no-repeat center center;
+  margin-right: 20px;
+}
+
+.contacts li:nth-child(2):before {
+  flex: 0 0 55px;
+  height: 55px;
+  content: "";
+  background: url(/img/geo.svg) no-repeat center center;
+  margin-right: 20px;
+}
+
+.contacts li:nth-child(3):before {
+  flex: 0 0 55px;
+  height: 55px;
+  content: "";
+  background: url(/img/inst.svg) no-repeat center center;
+  margin-right: 20px;
+}
+
+.contacts-content div {
+  max-width: 554px;
+}
+
+.contacts-branch-left {
+  position: absolute;
+  background: url(/img/branch.png) no-repeat left bottom;
+  background-size: 382px 252px;
+  transform: matrix(0.93, 0.37, 0.37, -0.93, 0, 0);
+  left: -40px;
+  top: 0px;
+  z-index: 5;
+
+}
+
+.contacts-branch-right {
+  position: absolute;
+  background: url(/img/branch.png) no-repeat;
+  background-size: 490px 323px;
+  transform: matrix(-0.89, 0.46, 0.46, 0.89, 0, 0);
+  right: -185px;
+  top: 30px;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+
+  .contacts-branch-right {
+    opacity: 0.5;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contacts__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .contacts li {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .contacts-content {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .contacts-content div {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contacts-map {
+    width: 100%;
+    height: 520px;
+  }
+
+  .contacts-branch-left {
+    display: none;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .contacts {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .contacts li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .main-contacts {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .contacts-branch-right {
+    background-size: 80%;
+    opacity: 0.4;
+  }
+
+}
+
+/*============== Conntacts screen end ==============*/
+
+/*============== Footer screen start ==============*/
+
+.footer {
+  padding: 170px 0px 80px 0px;
+  border-bottom: 1px dashed rgb(179, 179, 179);
+}
+
+.footer__container {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-align: center;
+}
+
+/*============== Footer screen end ==============*/
+
+.disclaimer {
+  font-size: 18px;
+  padding: 30px 0px;
+}
