@@ -1252,7 +1252,7 @@ body {
 
 .main-bull-branch-right {
   position: absolute;
-  background: url(/img/branch.png) no-repeat;
+  background: url(../img/branch.png) no-repeat;
   background-size: 489px 323px;
   transform: matrix(-0.74, -0.67, -0.67, 0.74, 0, 0);
   bottom: -160px;
@@ -1512,7 +1512,7 @@ body {
   /* Даем жесткую ширину и запрещаем зименяться */
   height: 55px;
   content: "";
-  background: url(/img/tel.svg) no-repeat center center;
+  background: url(../img/tel.svg) no-repeat center center;
   margin-right: 20px;
 }
 
@@ -1520,7 +1520,7 @@ body {
   flex: 0 0 55px;
   height: 55px;
   content: "";
-  background: url(/img/geo.svg) no-repeat center center;
+  background: url(../img/geo.svg) no-repeat center center;
   margin-right: 20px;
 }
 
@@ -1528,7 +1528,7 @@ body {
   flex: 0 0 55px;
   height: 55px;
   content: "";
-  background: url(/img/inst.svg) no-repeat center center;
+  background: url(../img/inst.svg) no-repeat center center;
   margin-right: 20px;
 }
 
@@ -1538,7 +1538,7 @@ body {
 
 .contacts-branch-left {
   position: absolute;
-  background: url(/img/branch.png) no-repeat left bottom;
+  background: url(../img/branch.png) no-repeat left bottom;
   background-size: 382px 252px;
   transform: matrix(0.93, 0.37, 0.37, -0.93, 0, 0);
   left: -40px;
@@ -1549,7 +1549,7 @@ body {
 
 .contacts-branch-right {
   position: absolute;
-  background: url(/img/branch.png) no-repeat;
+  background: url(../img/branch.png) no-repeat;
   background-size: 490px 323px;
   transform: matrix(-0.89, 0.46, 0.46, 0.89, 0, 0);
   right: -185px;
