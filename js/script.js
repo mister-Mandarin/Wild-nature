@@ -19,7 +19,7 @@ $('.trust-partners').slick({
             }
         },
         {
-            breakpoint: 321,
+            breakpoint: 426,
             settings: {
                 slidesToShow: 1,
                 dots: true

@@ -157,7 +157,7 @@ body {
   columns: #000000;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .simple-text {
     font-family: 'Proxima Nova';
     font-size: 18px;
@@ -193,7 +193,7 @@ body {
   color: #FFFFFF;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 425px) {
   .button {
     min-width: 100%;
   }
@@ -557,7 +557,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .main-learn_cone-3 {
     display: none;
   }
@@ -827,10 +827,6 @@ body {
     height: 250px;
   }
 
-}
-
-@media (max-width: 320px) {
-
   .main-cards_text {
     text-align: left;
     padding: 0px 0px 70px 0px;
@@ -1020,7 +1016,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .main-fish_title {
     font-weight: 600;
@@ -1030,7 +1026,7 @@ body {
 
   .main-fish_block {
     width: 100%;
-    padding: 360px 0px 0px 0px;
+    padding: 450px 0px 0px 0px;
   }
 
   .main-fish-numbers {
@@ -1208,7 +1204,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .main-deer-branch-right {
     bottom: 0px;
@@ -1256,7 +1252,7 @@ body {
 
 .main-bull-branch-right {
   position: absolute;
-  background: url(../img/branch.png) no-repeat;
+  background: url(/img/branch.png) no-repeat;
   background-size: 489px 323px;
   transform: matrix(-0.74, -0.67, -0.67, 0.74, 0, 0);
   bottom: -160px;
@@ -1325,7 +1321,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .main-bull-branch-left {
     z-index: -3;
@@ -1394,7 +1390,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .main-trust-title {
     padding: 80px 0px 10px 0px;
@@ -1442,7 +1438,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .main-delivery {
     padding: 80px 0px 0px 0px;
@@ -1604,7 +1600,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
   .contacts {
     font-size: 24px;
